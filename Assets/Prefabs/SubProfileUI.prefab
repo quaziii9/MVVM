@@ -336,6 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7043703443716076876}
   - component: {fileID: 8674721690480524511}
+  - component: {fileID: 868503479314264574}
   m_Layer: 5
   m_Name: SubProfileUI
   m_TagString: Untagged
@@ -371,9 +372,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7530674656174787320}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e256f83c9e8bc14e87b9addb63846c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text_Name: {fileID: 9181622285311758127}
+  Text_Level: {fileID: 7298301141870115077}
+--- !u!114 &868503479314264574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530674656174787320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e911cb96ddef3a44aa61219b68716e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Text_Name: {fileID: 9181622285311758127}

@@ -50,8 +50,8 @@ GameObject:
   - component: {fileID: 8079904879910123364}
   - component: {fileID: 5340506808722948397}
   - component: {fileID: 5338170396945245248}
-  - component: {fileID: 6090344485041129054}
   - component: {fileID: 7761490300834839580}
+  - component: {fileID: 2400429902304429389}
   m_Layer: 5
   m_Name: Btn_NameChange
   m_TagString: Untagged
@@ -118,18 +118,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6090344485041129054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104371653642682260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2f4e56b12377a4f9ae20d1e62a80c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7761490300834839580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +162,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6090344485041129054}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SkillButton, Assembly-CSharp
         m_MethodName: OnClick_LevelUpDouble
         m_Mode: 1
@@ -186,6 +174,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2400429902304429389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104371653642682260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92a5e3406ba4134db229a22158d31dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1438420839516899956
 GameObject:
   m_ObjectHideFlags: 0

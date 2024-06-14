@@ -9,7 +9,7 @@ public class TempProfileViewModel : ViewModelBase
     public int UserId
     {
         get { return _userId; }
-        set { UserId = value; }
+        set { _userId = value; }
     }
 
     public string Name
@@ -37,4 +37,11 @@ public class TempProfileViewModel : ViewModelBase
             OnPropertyChanged(nameof(Level));
         }
     }
+
+    //public event PropertyChangedEventHandler PropertyChanged;
+
+    //protected virtual void OnPropertyChanged(string propertyName)
+    //{
+    //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    //}
 }
