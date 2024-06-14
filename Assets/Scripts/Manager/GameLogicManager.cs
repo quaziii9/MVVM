@@ -65,6 +65,18 @@ public class GameLogicManager
         }
     }
 
+    public void RequestLevelUpDouble()
+    {
+        int reqUserId = _curSelectedPlayerId;
+
+        if (_playerDic.ContainsKey(reqUserId))
+        {
+            var curPlayer = _playerDic[reqUserId];
+            curPlayer.Level += 2;
+            _levelUpCallback.Invoke(reqUserId, curPlayer.Level);
+        }
+    }
+
     public void RefreshCharacterInfo(int requestId, Action<int, string, int> callback)
     {
         _curSelectedPlayerId = requestId;
