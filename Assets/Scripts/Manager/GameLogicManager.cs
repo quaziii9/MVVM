@@ -79,6 +79,18 @@ public class GameLogicManager
         }
     }
 
+    public void RegisterHpChangedCallback(Action<int> hpChangedCallback, bool isRegister)
+    {
+        if(isRegister)
+        {
+            _hpChangedCallback += hpChangedCallback;
+        }
+        else
+        {
+            _hpChangedCallback -= hpChangedCallback;
+        }
+    }
+
     public void RequestTargetCharacterDamage(int requestCharacterId, int damage)
     {
         _curSelectedPlayerId = requestCharacterId;
